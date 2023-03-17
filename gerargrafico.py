@@ -10,7 +10,10 @@ def main():
     plt.ylabel('Valores de entrada')
     plt.xlabel('Amostragem')
     plt.title('Gráfico de linhas')
+    i = 0
     for serie in valores:
-       plt.plot(serie)
+       plt.plot(serielabel='Série ' + str(i))   
+       i += 1
+    plt.legend(loc='upper left')
     plt.show()
 main()
