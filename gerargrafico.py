@@ -6,7 +6,7 @@ from leitorarquivo import LeitorArquivo
 def main():
     leitor = LeitorArquivo('data.txt')
     valores = leitor.getValores()
-    print(valores)
+    print(valores);
     plt.ylabel('Valores de entrada')
     plt.xlabel('Amostragem')
     plt.title('Gráfico de linhas')
